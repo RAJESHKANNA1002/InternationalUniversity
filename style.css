@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sedan", serif;
+}
+
+/* adding background image */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(college-5757815_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* For Logo Container */
+nav {
+  display: flex;
+  padding: 2px 5% 2px 2%;
+  justify-content: space-between;
+  align-items: center;
+  /* position: ; */
+  /* top: 0px; */
+}
+/* Logo Styling */
+nav img {
+  width: 100%;
+  height: 70px;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+a:hover {
+  text-shadow: 0px 0px 2px #ffffffd7;
+  transition: 0.5s;
+}
+/* nav h2 {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+} */
+
+/* Align that Home,About,Course,Blog,Contact */
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+/* Space btween that list */
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+/* font size of Home , about etc adding color */
+.nav-links ul li a {
+  color: antiquewhite;
+  text-decoration: none;
+  font-size: 13px;
+
+  /* font-family:add font style; */
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  letter-spacing: 2px;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+div h1 {
+  color: beige;
+}
+.text-box {
+  width: 90%;
+  color: rgb(255, 225, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 50px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+/*------------- for View more Border and style-----------   */
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 20px;
+  font-size: 12px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+/*--------------- to hovering view More button -------------------*/
+
+.hero-btn:hover {
+  letter-spacing: 0.04em;
+  border: 1 solid wheat;
+  background: #f44336;
+  transition: 0.5s;
+}
+/* ForMobile display */
+
+/* @media(max-width:700px)  {
+    .text-box h1{
+        font-size:20px ;
+    }
+    nav-links ul li{
+        display: block;
+    }
+    nav-links {
+        position: absolute;
+        background: cornflowerblue;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:0 ;
+        text-align: left;
+        z-index: 2;
+    }
+    
+} */
+
+/*------------------<Course>------------------- */
+
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  color: brown;
+  font-size: 14px;
+  font-weight: 300px;
+  line-height: 22px;
+  padding: 10px;
+}
+
+/* add style to Course menu*/
+
+/* Create Three Cards Style */
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style for inside these three Cards */
+.course-col {
+  flex-basis: 31%;
+  background: cornsilk;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 23px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+/* h3 Styling inside that heading COurses */
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* to hovering these cards */
+.course-col:hover {
+  box-shadow: 10px 10px 20px 2px #d15850;
+}
+
+/* We need add mobile view after learning JavaScripts */
+
+/* --------campus-------- */
+
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+}
+/* positioning that Division container for insert graduate image */
+.campus-col {
+  flex-basis: 30%;
+  border-radius: 10%;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+/* Set that image inside that dive Container */
+.campus-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* to set that city images into this path */
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+/* if i hover on that city images color will be change little transparency */
+.layer:hover {
+  background: rgba(0, 90, 226, 0.674);
+}
+/* That city names Styling css is given below */
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  color: #000000;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+/* hover city image means transition is happens city name display downwards to center */
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/* ------------facilities---------- */
+
+/* Create a cxontainer to insert image */
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  box-shadow: #000000;
+}
+/* if i add the image means allignment is not perfect so i solve with css given below  */
+
+.facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+/* TO fit these image to container */
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* space between heading to paragraph */
+.facilities-col p {
+  padding: 4px;
+}
+.facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+/* backgound effect */
+.facilities-col img {
+  box-shadow: 10px 15px 16px burlywood;
+}
+
+/* ----------------review by student---------------- */
+
+/* Align that heading and paragraph */
+.streview {
+  width: 80%;
+  margin: auto;
+  padding-top: 90px;
+  text-align: center;
+}
+
+/* for fit that image we create perfect size container */
+
+.streview-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+  transition: 0.5s;
+}
+
+/* to fitting that image */
+
+.streview-col img {
+  height: 70px;
+  margin-left: 9px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+/* adding style to review paragraph */
+
+.streview-col p {
+  padding: 0px;
+}
+
+/* Student Name Desiging */
+
+.streview-col h3 {
+  margin-top: 15px;
+  text-align: left;
+  /* margin-left: 25px; */
+}
+.streview-col:hover {
+  box-shadow: 0px 0px 20px 2px #ba4139;
+}
+
+/* -----------------Contact------------------- */
+
+/* Create one container then add background as (blur image)image then styling on that  */
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(grouppicgraduate.jpg);
+  background-position: center;
+  background-size: color;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0px;
+}
+/* TO style that heading (Enroll) */
+.cta h1 {
+  color: antiquewhite;
+  margin-bottom: 40px;
+  padding: 0px;
+}
+/* ---------------footer-------------- */
+
+/* TO Style About us */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.fa-brands {
+  width: 30px;
+}
+
+/* Styling that Paragarph */
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* beats of icon */
+.icons .fa-brands:hover {
+  transform: scale(1.6);
+  transition: 0.5s;
+  text-shadow: 0px 0px 2px rgba(218, 23, 23, 0.694);
+}
+.icons .fa-brands {
+  padding-top: 10px;
+}
+
+/* Author Styling */
+
+.footer h3 {
+  color: #1c040ac4;
+  text-shadow: 2px 2px 3px;
+  padding-top: 10px;
+}
+
+.footer h4 {
+  font-weight: 300px;
+  color: #dc0d0dcd;
+  font-size: 25px;
+  text-shadow: 2px 2px 3px #00000058;
+}
